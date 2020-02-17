@@ -5,7 +5,7 @@ function dilation_pic = dilation(X,B)
 
 % padding X with white pixels
 l = floor(length(B(1,:))/2);
-X = padarray(X, [l,l], 1);
+X = padarray(X, [l,l], 0);
 
 dilation_pic = zeros(size(X));
 [ROW,COL] = size(X);

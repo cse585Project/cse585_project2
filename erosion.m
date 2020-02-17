@@ -5,7 +5,7 @@ function erosion_pic = erosion(X,B)
 
 % padding X with black pixels
 l = floor(length(B(1,:))/2);
-X = padarray(X, [l,l], 1);
+X = padarray(X, [l,l], 0);
 
 erosion_pic = zeros(size(X));
 [ROW,COL] = size(X);
