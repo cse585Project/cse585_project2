@@ -1,6 +1,7 @@
 function super = superposition(original,ske)
-%UNTITLED2 Summary of this function goes here
-%   Detailed explanation goes here
+%superposition This function is to generate a result as a superposition of
+%homotopic skeletonization on the original image.
+%   The color of the skeleton is red
 for k = 1:size(ske, 1)
     for l = 1:size(ske, 2)
         if ske(k, l) == 1
