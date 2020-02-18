@@ -9,7 +9,7 @@ function f = pecstrum(U)
 % initialize a matrix for return based on the size of U
 f = zeros(size(U, 1), size(U, 2));
 A = [0; 0; 0; 0];
-% append a zero column at the end of the U matrix, now its size is 4x12
+% append a zero column at the end of the U matrix
 U = [U A];
 for i = 1:size(f, 2)
     f(:, i) = (U(:, i) - U(:, i+1)) ./ U(:, 1);
