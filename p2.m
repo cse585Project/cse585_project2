@@ -49,10 +49,11 @@ Bb(:,:,8) = B8b;
 x = f;
 x_prev = zeros(size(x));
 i = 1;
+% homotopic skeletonization
 while ~isequal(x,x_prev)
    x_prev = x; 
    for j = 1:8
-       x = homo_ske(x, Bf(:,:,j),Bb(:,:,j));
+       x = thinning(x, Bf(:,:,j),Bb(:,:,j));
    end
    if i == 2
        x2 = x;
@@ -97,10 +98,11 @@ figure, imshow(superposition(rgb, x), []);
 x = f1;
 x_prev = zeros(size(x));
 i = 1;
+% homotopic skeletonization
 while ~isequal(x,x_prev)
    x_prev = x; 
    for j = 1:8
-       x = homo_ske(x, Bf(:,:,j),Bb(:,:,j));
+       x = thinning(x, Bf(:,:,j),Bb(:,:,j));
    end
    if i == 2
        x2 = x;

@@ -1,4 +1,4 @@
-function ske = homo_ske(X,Bf,Bb)
+function ske = thinning(X,Bf,Bb)
 %homo_ske This function is for homotopic skeletonization
 %   X is the input image, Bf and Bb are 2 structuring elements
 %   output is the homotopic skeletonization
