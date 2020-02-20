@@ -2,7 +2,7 @@
 f=imread('penn256.gif');
 f1=imread('bear.gif');
 
-
+% structuring elements
 B1f = [0, 0, 0; 0, 1, 0; 1, 1, 1];
 B1b = [1, 1, 1; 0, 0, 0; 0, 0, 0];
 
